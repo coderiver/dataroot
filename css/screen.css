@@ -165,12 +165,12 @@ h4 { font-family: "Lato Bold", Arial, sans-serif; font-size: 16px; line-height: 
 @media only screen and (max-width: 980px) { .info_mission .info__icon { bottom: -45px; right: 9px; } }
 
 .item-wrapper { overflow: hidden; font-size: 0px; border-left: 1px solid #4995d4; max-width: 615px; margin: 0 -37px 0 -17px; }
-@media only screen and (min-width: 1400px) { .item-wrapper { max-width: 900px; } }
+@media only screen and (min-width: 1500px) { .item-wrapper { max-width: 900px; } }
 @media only screen and (max-width: 980px) { .item-wrapper { margin: 0 -20px; background: #1b7bc9; max-width: 710px; border-bottom: 1px solid #4995d4; } }
 @media only screen and (max-width: 600px) { .item-wrapper { margin: 0 auto; background: none; border-bottom: none; } }
 
 .item { display: inline-block; vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 205px; border-bottom: none; position: relative; border-top: 1px solid #4995d4; min-height: 207px; padding: 12px 15px 8px; background: #1b7bc9; }
-@media only screen and (min-width: 1400px) { .item { width: 300px; min-height: 270px; } }
+@media only screen and (min-width: 1500px) { .item { width: 300px; min-height: 270px; } }
 @media only screen and (max-width: 980px) { .item { width: 50%; min-height: 280px; padding: 30px 20px 0; } }
 @media only screen and (max-width: 600px) { .item { min-height: 207px; padding: 12px 15px 8px; } }
 @media only screen and (max-width: 480px) { .item { width: 100%; } }
@@ -178,18 +178,18 @@ h4 { font-family: "Lato Bold", Arial, sans-serif; font-size: 16px; line-height: 
 .item:before { left: -1px; }
 .item:after { right: 0; }
 .item h6 { font-size: 12px; font-family: "Lato Bold", Arial, sans-serif; text-transform: uppercase; margin-bottom: 10px; }
-@media only screen and (min-width: 1400px) { .item h6 { font-size: 16px; margin-bottom: 10px; } }
+@media only screen and (min-width: 1500px) { .item h6 { font-size: 16px; margin-bottom: 10px; } }
 @media only screen and (max-width: 980px) { .item h6 { font-size: 16px; margin-bottom: 5px; } }
 @media only screen and (max-width: 600px) { .item h6 { font-size: 12px; margin-bottom: 10px; } }
 .item h6, .item p, .item li { color: white; }
 .item li, .item p { font-family: "Lato Regular", Arial, sans-serif; font-size: 12px; line-height: 20px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; }
-@media only screen and (min-width: 1400px) { .item li, .item p { font-size: 16px; line-height: 26px; } }
+@media only screen and (min-width: 1500px) { .item li, .item p { font-size: 16px; line-height: 26px; } }
 @media only screen and (max-width: 980px) { .item li, .item p { font-size: 16px; line-height: 26px; } }
 @media only screen and (max-width: 600px) { .item li, .item p { font-size: 12px; line-height: 20px; } }
 .item li { padding: 0 0 0 10px; position: relative; }
 @media only screen and (max-width: 980px) { .item li { padding: 0 0 0 13px; } }
 .item li:before { content: ""; position: absolute; top: 8x; left: 0; background: white; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40); opacity: 0.4; width: 4px; height: 4px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
-@media only screen and (min-width: 1400px) { .item li:before { top: 11px; } }
+@media only screen and (min-width: 1500px) { .item li:before { top: 11px; } }
 @media only screen and (max-width: 980px) { .item li:before { top: 11px; } }
 @media only screen and (max-width: 600px) { .item li:before { top: 8px; } }
 

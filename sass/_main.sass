@@ -1,28 +1,504 @@
-// Normally mainpage styles
+.out
+	width: 100%
+	min-width: 320px
+	margin: 0 auto
+	padding: 70px 0 0 0
+	+r(980)
+		padding: 80px 0 0 0  
+.header
+	padding: 22px 30px 22px
+	+clr
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	background: #fff
+	z-index: 50 
+	height: 70px
+	+box 
+	+r(980)
+		text-align: center
+		padding: 27px 30px 
+		height: 80px
+.logo
+	display: inline-block
+
+.nav
+	float: right
+	+fs(0)
+	+r(980)
+		display: none
+	li
+		display: inline-block
+		padding: 0 0 0 45px 
+	a
+		display: block
+		+fs(14)
+		+bold
+		letter-spacing: 0.1em 
+		color: #222020
+		position: relative
+		+ttu
+		padding: 0 0 7px 0 
+		&:before
+			content: "" 
+			position: absolute
+			bottom: 0
+			left: 0
+			right: 0
+			height: 2px
+			background: #4dbf57 
+			+opacity(0)
+			visibility: hidden
+			+transition(visibility .3s, opacity .3s)
+		&.is-active
+			&:before
+				+opacity(1)
+				visibility: visible
+				
+.container
+	+clr
+
+.sidebar
+	width: 100%
+	max-width: 400px
+	float: left
+	+box
+	border-top: 1px solid #ececec
+	padding-top: 5px 
+	// width: 33.3%
+	// min-width: 400px 
+	+r(980)
+		max-width: 100%
+		float: none
+		border-top: none
+		padding: 10px 0 
+	+r(600)
+		padding: 5px 0 
+.box
+	border-bottom: 1px solid #ececec
+	padding: 15px 20px 15px 30px  
+	+r(980)
+		padding: 62px 40px 20px
+	+r(600)
+		padding: 15px 20px 15px 30px 
+	&__link
+		+bold
+		+fs(18)
+		line-height: 20px
+		color: #4dbf57
+		display: block
+		width: 100%
+		+ttu
+		position: relative
+		margin-bottom: 20px
+		+tr(color .2s)
+		&:before
+			content: "" 
+			position: absolute
+			top: 0
+			right: 0
+			+s(arr-down)
+			+r(980)
+				+s(arr-down_mob)
+			+r(600)
+				+s(arr-down)
+		+r(980)
+			+fs(28)
+			line-height: 39px
+		+r(600)
+			+fs(18)
+			line-height: 20px 
+	&__hide
+		display: none
+	p, ul, ol
+		+reg
+		+fs(14)
+		color: #3d4243
+		line-height: 20px 
+		margin-bottom: 20px
+		+r(980)
+			+fs(20)
+			line-height: 34px
+			margin-bottom: 10px
+		+r(600)
+			+fs(14)
+			line-height: 20px
+			margin-bottom: 20px 
+	li
+		position: relative
+		padding: 0 0 0 14px 
+		+r(980)
+			padding: 0 0 0 25px 
+		+r(600)
+			padding: 0 0 0 14px 
+		&:before
+			content: "" 
+			position: absolute
+			top: 7px
+			left: 0
+			width: 5px
+			height: 5px
+			background-color: #333333
+			+border-radius(50%)
+			+opacity(0.3)
+			+r(980)
+				width: 8px
+				height: 8px
+				top: 13px
+			+r(600)
+				top: 7px
+				width: 5px
+				height: 5px
+	h4
+		margin-bottom: 20px
+		+r(980)
+			padding: 23px 0 0 0
+			margin-bottom: 2px
+		+r(600)
+			margin-bottom: 20px
+			padding: 0 
+	&__bottom
+		+vertical
+		text-align: right
+		padding: 10px 0 15px 0 
+		+r(980)
+			padding: 44px 0 40px 0 
+		+r(600)
+			padding: 10px 0 15px 0 
+		.btn-apply
+			margin-left: 27px
+			+r(980)
+				margin-left: 58px 
+			+r(600)
+				margin-left: 27px
+		.share, .btn-apply
+			vertical-align: middle
+	&.is-active
+		.box__link
+			color: #3d4243
+			&:before
+				+s(arr-up)
+				+r(980)
+					+s(arr-up_mob)
+				+r(600)
+					+s(arr-up)
+	&_heading
+		+r(980)
+		display: none
+.share
+	color: #1d7cca
+	+reg
+	+fs(18)
+	display: inline-block
+	+r(980)
+		+fs(30)
+	+r(600)
+		+fs(18)
+	&:hover
+		text-decoration: underline
+
+.btn-apply
+	padding: 12px 28px 12px 28px 
+	background-color: #4DBF57
+	line-height: 1
+	+fs(18)
+	+bold
+	color: #fff
+	+border-radius(3px) 
+	display: inline-block
+	+transition(background .3s)
+	&:hover
+		background: lighten(#4DBF57, 5%) 
+	&:active
+		background: darken(#4DBF57, 5%) 
+	+r(980)
+		+fs(30)
+		padding: 21px 90px 
+	+r(600)
+		+fs(18)
+		padding: 12px 28px 
+.content
+	overflow: hidden
+				
+.info
+	p, h3
+		+fs(18)
+		+reg
+		line-height: 26px
+		color: #fff
+		margin-bottom: 25px
+		width: 100%
+		+r(980)
+			+fs(28)
+			line-height: 42px
+			width: 100%
+			margin-bottom: 40px
+		+r(600)
+			+fs(18)
+			line-height: 26px
+			margin-bottom: 25px
+	h3
+		+r(980)
+			+fs(32)
+		+r(600)
+			+fs(18)
+			line-height: 26px
+	h2
+		margin-bottom: 20px
+		+r(980)
+			margin-bottom: 30px
+		+r(600)
+			margin-bottom: 20px
+	&__inner
+		padding: 70px 100px
+		+r(980)
+			padding: 57px 40px 30px 
+		+r(600)
+			padding: 47px 30px 20px  
+	.list
+		width: 80%
+		+r(980)
+			width: 100%
+.info
+	background-color: rgb(0,141,209)
+	.info__inner
+		position: relative
+	.info__icon 
+		position: absolute
+		right: 0px
+		+r(600)
+			display: none
+.info_about
+	background-image: -moz-linear-gradient( -34deg, rgb(0,141,209) 20%, rgb(57,89,188) )
+	background-image: -webkit-linear-gradient( -34deg, rgb(0,141,209) 20%, rgb(57,89,188) )
+	background-image: -ms-linear-gradient( -34deg, rgb(0,141,209) 20%, rgb(57,89,188) )
+	.info__inner
+		background: url(../img/about-in.png) repeat top left 
+		+r(600)
+			background: none
+		p
+			width: 82%
+			+r(980)
+				width: 100%
+.info_team
+	background-color: rgb(34, 110, 191)
+	background-image: -moz-linear-gradient( 90deg, rgb(38,107,190) 0%, rgb(10,134,200) 100%)
+	background-image: -webkit-linear-gradient( 90deg, rgb(38,107,190) 0%, rgb(10,134,200) 100%)
+	background-image: -ms-linear-gradient( 90deg, rgb(38,107,190) 0%, rgb(10,134,200) 100%)
+	.info__inner
+		+r(980)
+			padding-top: 100px
+		p, h3
+			width: 80%
+			+r(980)
+				width: 100%
+	.info__icon 
+		right: -60px
+		margin-top: -126px
+		top: 50%
+		+r(980)
+			width: 220px
+			height: 203px
+			top: 0
+			margin-top: 0
+			right: 0 
+.info_areas
+	background-image: -moz-linear-gradient( -34deg, rgb(0,141,209) 20%, rgb(57,89,188) )
+	background-image: -webkit-linear-gradient( -34deg, rgb(0,141,209) 20%, rgb(57,89,188) )
+	background-image: -ms-linear-gradient( -34deg, rgb(0,141,209) 20%, rgb(57,89,188) )
+	.info__inner
+		padding-bottom: 0 
+		+r(980)
+			padding-bottom: 80px 
+		+r(600)
+			padding-bottom: 0
+		h2
+			width: 75%
+			+r(600)
+				width: 85%
+		p
+			width: 80%
+	.info__icon 
+		right: -20px
+		top: 60px
+		+r(980)
+			right: -10px
+.info_mission
+	background-color: rgb(34, 110, 191)
+	.info__inner
+		+r(980)
+			padding-bottom: 220px  
+		+r(600)
+			padding-bottom: 110px 
+	.info__icon 
+		right: 40px
+		bottom: 10px
+		+r(980)
+			bottom: -45px
+			right: 9px
+
+.item-wrapper
+	overflow: hidden
+	+fs(0)
+	border-left: 1px solid #4995d4
+	max-width: 615px
+	margin: 0 -37px 0 -17px
+	+rm(1400)
+		max-width: 900px 
+	+r(980)
+		margin: 0 -20px
+		background: #1b7bc9
+		max-width: 710px
+		border-bottom: 1px solid #4995d4
+	+r(600)
+		margin: 0 auto
+		background: none
+		border-bottom: none
+.item
+	display: inline-block
+	vertical-align: top
+	+box
+	width: 205px
+	border-bottom: none
+	position: relative
+	border-top: 1px solid #4995d4
+	min-height: 207px 
+	padding: 12px 15px 8px
+	background: #1b7bc9 
+	+rm(1400)
+		width: 300px
+		min-height: 270px
+	+r(980)
+		width: 50%
+		min-height: 280px 
+		padding: 30px 20px 0
+	+r(600)
+		min-height: 207px
+		padding: 12px 15px 8px  
+		// max-width: 250px 
+	+r(480)
+		width: 100%
+	&:before, &:after
+		content: ""
+		position: absolute
+		top: 0
+		width: 1px
+		height: 1000px
+		background: #4995d4
+	&:before
+		left: -1px
+	&:after
+		right: 0
+	h6
+		+fs(12)
+		+bold
+		+ttu
+		margin-bottom: 10px
+		+rm(1400)
+			+fs(16)
+			margin-bottom: 10px
+		+r(980)
+			+fs(16)
+			margin-bottom: 5px
+		+r(600)
+			+fs(12)
+			margin-bottom: 10px
+	h6, p, li
+		color: #ffffff
+	li, p
+		+reg
+		+fs(12)
+		line-height: 20px
+		+opacity(0.8)
+		+rm(1400)
+			+fs(16)
+			line-height: 26px
+		+r(980)
+			+fs(16)
+			line-height: 26px
+		+r(600)
+			+fs(12)
+			line-height: 20px
+	li
+		padding: 0 0 0 10px
+		position: relative
+		+r(980)
+			padding: 0 0 0 13px 
+		&:before
+			content: ""
+			position: absolute
+			top: 8x
+			left: 0
+			background: #ffffff
+			+opacity(0.4)
+			width: 4px
+			height: 4px
+			+border-radius(50%)
+			+rm(1400)
+				top: 11px
+			+r(980)
+				top: 11px
+			+r(600)
+				top: 8px
 
 
+.list
+	li
+		position: relative
+		+fs(16)
+		line-height: 24px
+		+reg
+		color: #fff
+		margin-bottom: 10px
+		+r(980)
+			+fs(28)
+			line-height: 42px
+			margin-bottom: 18px
+		+r(600)
+			+fs(16)
+			line-height: 24px
+			margin-bottom: 10px
+		&:before
+			content: "" 
+			position: absolute
+			top: 8px
+			left: -22px
+			+s(checked)
+			+r(980)
+				+s(checked_mob)
+				top: 14px
+				left: -30px
+			+r(600)
+				+s(checked)
+				top: 8px
+				left: -22px
+.tabs
+	width: 100%
+	display: none
+	+r(980)
+		display: table
+	a
+		display: table-cell
+		width: 50% 
+		+fs(28)
+		+black
+		text-align: center
+		padding: 25px 0 27px 
+		line-height: 1
+		+r(600)
+			+fs(18)
+			padding: 15px 0 17px 
+		&.is-sidebar
+			color: #008dd1
+			background: #ffffff 
+		&.is-content
+			color: #fff 
+			background: #0d87cf 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.is-hidden
+	+r(980)
+		display: none
 
 
 

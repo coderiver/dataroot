@@ -53,24 +53,53 @@ body
 	font-size: 12px 
 	line-height: 1.4
 
+//FONTS
++font("Lato Black", lato-black)
++font("Lato Bold", lato-bold)
++font("Lato Regular", lato-regular)
 
-// common blocks      
+=black
+	font-family: "Lato Black", Arial, sans-serif 
+=bold
+	font-family: "Lato Bold", Arial, sans-serif 
+=reg
+	font-family: "Lato Regular", Arial, sans-serif 
 
+=ttu
+	text-transform: uppercase
 
+h1, h2, h3, h4, h5, h6, strong
+	font-weight: normal
+a
+	text-decoration: none
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.heading
+	+black
+	display: block
+	+fs(34)
+	color: #333333
+h2
+	+fs(38)
+	color: #ffffff
+	+black 
+	line-height: 1.25 
+	+r(980)
+		+fs(60)
+		line-height: 70px
+	+r(600)
+		+fs(38)
+		line-height: 1.25
+h4
+	+bold
+	+fs(16)
+	line-height: 20px
+	color: #3d4243 
+	+r(980)
+		+fs(24)
+		line-height: 34px
+	+r(600)
+		+fs(16)
+		line-height: 20px
 
 
 

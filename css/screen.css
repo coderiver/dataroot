@@ -45,11 +45,12 @@ h4 { font-family: "Lato Bold", Arial, sans-serif; font-size: 16px; line-height: 
 .l .l-col2 { float: right; width: 70%; }
 
 .out { width: 100%; min-width: 320px; margin: 0 auto; padding: 70px 0 0 0; }
-@media only screen and (max-width: 980px) { .out { padding: 80px 0 0 0; } }
+@media only screen and (max-width: 980px) { .out { padding: 0; } }
 
 .header { padding: 22px 30px 22px; *zoom: 1; position: fixed; top: 0; left: 0; right: 0; background: white; z-index: 50; height: 70px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .header:after { content: " "; display: table; clear: both; }
-@media only screen and (max-width: 980px) { .header { text-align: center; padding: 27px 30px; height: 80px; } }
+@media only screen and (max-width: 980px) { .header { text-align: center; padding: 27px 30px; height: 80px; position: relative; } }
+@media only screen and (max-width: 600px) { .header { padding: 17px 30px; height: 60px; } }
 
 .logo { display: inline-block; }
 
@@ -173,7 +174,7 @@ h4 { font-family: "Lato Bold", Arial, sans-serif; font-size: 16px; line-height: 
 @media only screen and (min-width: 1500px) { .item { width: 300px; min-height: 270px; } }
 @media only screen and (max-width: 980px) { .item { width: 50%; min-height: 280px; padding: 30px 20px 0; } }
 @media only screen and (max-width: 600px) { .item { min-height: 207px; padding: 12px 15px 8px; } }
-@media only screen and (max-width: 480px) { .item { width: 100%; } }
+@media only screen and (max-width: 480px) { .item { width: 100%; max-width: 280px; } }
 .item:before, .item:after { content: ""; position: absolute; top: 0; width: 1px; height: 1000px; background: #4995d4; }
 .item:before { left: -1px; }
 .item:after { right: 0; }
@@ -206,5 +207,6 @@ h4 { font-family: "Lato Bold", Arial, sans-serif; font-size: 16px; line-height: 
 @media only screen and (max-width: 600px) { .tabs a { font-size: 18px; padding: 15px 0 17px; } }
 .tabs a.is-sidebar { color: #008dd1; background: white; }
 .tabs a.is-content { color: white; background: #0d87cf; }
+@media only screen and (max-width: 900px) { .tabs.is-active { position: fixed; top: 0; left: 0; right: 0; z-index: 999; } }
 
 @media only screen and (max-width: 980px) { .is-hidden { display: none; } }

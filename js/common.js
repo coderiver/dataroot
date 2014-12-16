@@ -57,4 +57,13 @@ head.ready(function() {
 		$(' '+attr).removeClass('is-hidden');
 		return false;
 	});
+	$(window).scroll(function() {    
+	    var scroll = $(window).scrollTop();
+
+	    if (scroll >= 70) {
+	        $(".tabs").addClass("is-active");
+	    } else {
+	        $(".tabs").removeClass("is-active");
+	    }
+	});
 });
